@@ -45,7 +45,7 @@
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">CNS</a></h1>
+      <h1 class="logo"><a href="/">CNS</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="./static/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -81,8 +81,7 @@
         <th scope="col">HOD</th>
         
         
-        <th scope="col">EDIT</th>
-        <th scope="col">DELETE</th>
+        
   
       </tr>
     </thead>
@@ -94,8 +93,6 @@
       <td>{{post.hod}}</td>
       
   
-    <td><a href="/edit/{{post.id}}"><button class="btn btn-primary">Edit </button> </a> </td>
-    <td><a href="/delete/{{post.id}}"><button onclick="return confirm('Are you sure to Delete data');" class="btn btn-danger">Delete </button> </a> </td>
-
+    s
     </tr>
 {% endfor %}

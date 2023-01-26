@@ -183,7 +183,7 @@ def addfeesdetails():
     if request.method=='POST':
         usn=request.form.get('usn')
         name=request.form.get('name')
-        feesp=request.form.get('name')
+        feesp=request.form.get('feesp')
         total=35000
         remf=total-int(feesp)
         query=db.engine.execute(f"INSERT INTO `fees` (`usn`,`name`,`feesp`,`remf`) VALUES ('{usn}','{name}','{feesp}','{remf}')")
@@ -201,7 +201,28 @@ def addcourse():
     return render_template('addcourse.html') 
 
 
+@app.route("/editstudent/<string:usn>",methods=['POST','GET'])
+def editstudent(usn):
+    posts=student.query.filter_by(usn=usn).first()
+    if request.method=="POST":
+        usn=request.form.get('usn')
+        name=request.form.get('name')
+        sem=request.form.get('sem')
+        dept=request.form.get('dept')
+        email=request.form.get('email')
+        phone=request.form.get('phone')
+        query=db.engine.execute(f"UPDATE `student` SET `usn`='{usn}',`name`='{name}',`sem`='{sem}',`dept`='{dept}',`email`='{email}',`phone`='{phone}' WHERE `student`.`usn` = '{usn}'")
+        return redirect('/viewstudent')
 
+    
+    return render_template('editstudent.html',posts=posts)
+
+@app.route("/deletestudent/<string:usn>",methods=['POST','GET'])
+
+def delete(usn):
+    db.engine.execute(f"DELETE FROM `student` WHERE `student`.`usn`='{usn}'")
+    flash("Slot Deleted Successful","danger")
+    return redirect('/viewstudent')
 
 
 
@@ -251,6 +272,11 @@ def viewfeesdetails():
 def viewcourses():
     query=db.engine.execute(f"SELECT * FROM `courses`")
     return render_template('viewcourses.html',query=query)
+
+@app.route("/about")
+def about():
+    
+    return render_template('about.html') 
 
 
 
