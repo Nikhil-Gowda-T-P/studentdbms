@@ -31,7 +31,7 @@ Before you can run this application, you need to have the following software and
    git clone https://github.com/yourusername/student-database-management.git
    
 2.
- ```bash
+
 cd student-database-management
 
 3 install any webserver and initialize db connection
