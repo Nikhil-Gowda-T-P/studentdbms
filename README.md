@@ -49,4 +49,14 @@ If you would like to contribute to this project, please follow these steps:
 - Push your changes to your forked repository.
 - Create a pull request to the original repository.
 
+## Screenshots
+![Screenshot (377)](https://github.com/Nikhil-Gowda-T-P/studentdbms/assets/76807414/dde20540-f9dc-4e69-af44-16258b23e8ce)
+![Screenshot (378)](https://github.com/Nikhil-Gowda-T-P/studentdbms/assets/76807414/f76bf883-c4e0-4514-b6a7-745de16257cf)
+![Screenshot (379)](https://github.com/Nikhil-Gowda-T-P/studentdbms/assets/76807414/7b5f93e1-1b2e-4442-914e-b8aa7c83d948)
+![Screenshot (381)](https://github.com/Nikhil-Gowda-T-P/studentdbms/assets/76807414/0c32a295-2e82-4d72-86a4-66d85d455866)
+![Screenshot (380)](https://github.com/Nikhil-Gowda-T-P/studentdbms/assets/76807414/4461c6f2-78ce-4772-98ba-7d8f53c051fb)
+
+
+
+
     
